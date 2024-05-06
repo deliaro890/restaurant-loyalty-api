@@ -4,6 +4,7 @@ RUN npm install -g pm2
 RUN mkdir -p /home/app
 
 COPY  . /home/app
+RUN npm install
 
 EXPOSE 3000
 
