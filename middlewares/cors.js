@@ -5,6 +5,8 @@ const ACCEPTED_ORIGINS = [
   'http://localhost:3000',
   'http://localhost:1234',
   'http://107.152.42.60:3000',
+  'http://107.152.42.60:80',
+  'http://107.152.42.60',
   
 ]
 
