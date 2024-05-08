@@ -1,0 +1,65 @@
+
+### Crear una restaurante con POST
+POST http://localhost:3000/restaurantes
+Content-Type: application/json
+
+{
+  "nombre": "Olivos"
+}
+
+### Recuperar todas los restaurantes
+GET http://localhost:3000/restaurantes
+
+
+### Recuperar una restaurante por id
+GET http://localhost:3000/restaurantes/663ac17cde6df34591c25f19
+
+### Borrar una restaurante
+DELETE http://localhost:3000/restaurantes/663ac17cde6df34591c25f19
+
+### Actualizar una restaurante
+PATCH http://localhost:3000/restaurantes/663ac17cde6df34591c25f19
+Content-Type: application/json
+
+{
+  "nombre": "test2"
+}
+
+
+
+### Recuperar todas las visitas
+GET http://localhost:3000/visits
+
+### Recuperar una visita por id
+GET http://localhost:3000/visits/663ac241de6df34591c25f23
+
+
+### Crear una visita con POST
+POST http://localhost:3000/visits
+Content-Type: application/json
+
+{
+  "cliente": "Del",
+  "restaurante":"6637f05d1df1d081ee8b2b71",
+  "puntos": 19
+}
+
+
+### Borrar una visita
+DELETE http://localhost:3000/visits/663ac241de6df34591c25f23
+
+### Actualizar una visita
+PATCH http://localhost:3000/visits/663b358af3cfd53e6b4c69a3
+Content-Type: application/json
+
+{
+  "puntos": 0,
+  "cliente": "Del",
+  "restaurante":"6637f05d1df1d081ee8b2b71"
+}
+
+
+
+
+
+

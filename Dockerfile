@@ -11,7 +11,7 @@ RUN npm install
 EXPOSE 3000
 
 # Inicia la aplicación con PM2
-CMD ["pm2-runtime", "/home/app/points.js"]
+CMD ["pm2-runtime", "/home/app/server-with-mongodb.js"]
 
 
 
