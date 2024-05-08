@@ -1,4 +1,5 @@
 // controllers/VisitController.js
+import mongoose from 'mongoose';
 
 export class VisitController {
     constructor({ Visit }) {
@@ -57,6 +58,9 @@ export class VisitController {
   
     delete = async (req, res) => {
       try {
+        if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'ID de visita no válida' });
+        }
         const visit = await this.Visit.findByIdAndDelete(req.params.id);
         if (!visit) {
           return res.status(404).json({ message: 'Visita no encontrada' });

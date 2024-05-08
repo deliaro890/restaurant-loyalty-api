@@ -1,4 +1,5 @@
 // controllers/RestauranteController.js
+import mongoose from 'mongoose';
 
 export class RestauranteController {
   constructor({ Restaurante }) {
@@ -61,6 +62,9 @@ export class RestauranteController {
 
   delete = async (req, res) => {
     try {
+        if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+            return res.status(400).json({ message: 'ID de restaurante no válido' });
+        }
       const restaurante = await this.Restaurante.findByIdAndDelete(req.params.id);
       if (!restaurante) {
         return res.status(404).json({ message: 'Restaurante no encontrado' });
