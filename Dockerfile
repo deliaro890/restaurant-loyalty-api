@@ -11,7 +11,11 @@ RUN npm install
 EXPOSE 3000
 
 # Inicia la aplicación con PM2
-CMD ["pm2-runtime", "/home/app/server-with-mongodb.js"]
+#CMD ["pm2-runtime", "/home/app/server-with-mongodb.js"]
+# Inicia la aplicación con PM2 y redirige los logs a /dev/null
+CMD ["pm2-runtime", "start", "/home/app/server-with-mongodb.js", "--name", "points_prod", "--output", "/dev/null", "--error", "/dev/null"]
+
+
 
 
 
