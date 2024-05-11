@@ -12,7 +12,7 @@ GET http://localhost:3000/restaurantes
 
 
 ### Recuperar una restaurante por id
-GET http://localhost:3000/restaurantes/663ac17cde6df34591c25f19
+GET http://localhost:3000/restaurantes/6637f05d1df1d081ee8b2b71
 
 ### Borrar una restaurante
 DELETE http://localhost:3000/restaurantes/6637f05d1df1d081ee8b2b71

@@ -4,7 +4,7 @@ POST http://107.152.42.60:3000/restaurantes
 Content-Type: application/json
 
 {
-  "nombre": "Olive Garden"
+  "nombre": "cheese cake"
 }
 
 ### Recuperar todas los restaurantes
