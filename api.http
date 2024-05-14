@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ### Recuperar todas los restaurantes
-GET http://localhost:3000/restaurantes
+GET http://localhost:3000/leo/restaurantes
 
 
 ### Recuperar una restaurante por id
@@ -28,7 +28,7 @@ Content-Type: application/json
 
 
 ### Recuperar todas las visitas
-GET http://localhost:3000/visits
+GET http://localhost:3000/leo/visits
 
 ### Recuperar una visita por id
 GET http://localhost:3000/visits/663ac241de6df34591c25f23

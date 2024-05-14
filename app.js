@@ -11,8 +11,8 @@ export const createApp = ({ Visit, Restaurante }) => {
   app.use(corsMiddleware())
   app.disable('x-powered-by')
 
-  app.use('/leo/visits', createVisitRouter({ Visit }))
-  app.use('/leo/restaurantes', createRestauranteRouter({ Restaurante }))
+  app.use('/visits', createVisitRouter({ Visit }))
+  app.use('/restaurantes', createRestauranteRouter({ Restaurante }))
 
 
 
